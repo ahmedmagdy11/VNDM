@@ -1,20 +1,18 @@
 const express = require("express");
+const connection = require("./configs/database");
+const router = require("./router/router")
 const app = express();
-const mysql = require("mysql");
 
+
+app.use(express.static('views'))
 app.use(express.urlencoded({ extended: false }));
+app.use(router)
 
 
-
-
-mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: "password",
-    port: 3306,
-  }).connect(() => {
+connection.connect(() => {
     app.listen(3000, () => {
       console.log(`listening on port ${3000}`);
     });
-  });
+});
+
 
