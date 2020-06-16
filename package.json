@@ -1,0 +1,32 @@
+{
+  "name": "vndm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahmedmagdy11/VNDM.git"
+  },
+  "keywords": [
+    "Docker",
+    "mysql",
+    "nodejs"
+  ],
+  "author": "ahmedmagdy11",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ahmedmagdy11/VNDM/issues"
+  },
+  "homepage": "https://github.com/ahmedmagdy11/VNDM#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
